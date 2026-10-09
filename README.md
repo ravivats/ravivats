@@ -2,7 +2,9 @@
 
 I'm a Lead Data Scientist at [Thoughtworks](https://www.thoughtworks.com) in Singapore. I build LLM agent systems and retrieval-augmented generation (RAG) applications for public sector clients, and the evaluation and monitoring that sits around them: checks for goal drift, hallucination, and drops in output quality once a system is running in production.
 
-Before Thoughtworks I spent six years at Grab, first on high-throughput Go services for food and express deliveries and later on LLM systems for multilingual content. Before that I worked on trade data pipelines at Morgan Stanley. I hold an M.S. in Computer Science (Machine Learning) from Georgia Tech, where I also worked as a research assistant on graph neural networks and reinforcement learning for Boolean circuit analysis.
+Before Thoughtworks I spent six years at Grab, first on high-throughput Go services for food and express deliveries and later on LLM systems for multilingual content. Before that I worked on trade rules violation detection engine & trade data pipelines at Morgan Stanley as a Backend and Data Engineer.
+
+I hold an M.S. in Computer Science (Machine Learning) from Georgia Tech, where I also worked as a research assistant on graph neural networks and reinforcement learning for Boolean circuit analysis.
 
 ## What I'm working on
 
@@ -29,13 +31,14 @@ Slides and recordings go up on [ravivats.github.io/talks](https://ravivats.githu
 ## Selected work
 
 **Thoughtworks**, Lead Data Scientist (2025 to present)
+- Designed and implemented a unified natural language search across every searchable entity type in an organisation. It uses hybrid retrieval that combines lexical keyword matching, fuzzy matching for typos and partial terms, and embedding-based semantic search.
 - Multi-agent LLM systems that debug and resolve issue tickets raised by members of the public.
 - Agentic content generation constrained by domain guardrails, with evaluation workflows that monitor agent output over time.
 
 **Grab**, Senior Software Engineer (AI) and Software Engineer (2019 to 2025)
 - Led the implementation of an agentic translation system built as a translator and critic loop on LangGraph. It writes emails, notifications, and promotional content in Grab's brand voice across English, Mandarin, and eight Southeast Asian languages, and served more than one million users a day.
-- Fine-tuned Llama 3.1 8B with LoRA on copy written by Grab's content designers, then added few-shot retrieval over a FAISS index so the model could draw on content written after training.
-- Built an LLM-assisted flow that suggests replacement items when part of an order is unavailable, using RAG over outputs from Grab's recommendation model.
+- Fine-tuned Llama 3.1 8B with LoRA on promo text written by the firm's content team, then added few-shot retrieval over a FAISS index so the model could draw on content written after training.
+- Built an LLM-assisted flow that suggests replacement items when part of an order is unavailable, using RAG over merchant's current available items.
 - Designed a generic min/max TTL Redis cache in Go that keeps serving recent data while an upstream service recovers from errors. It was piloted on the GrabFood, Mart, and Express gateway.
 - Built chaos engineering jobs that cut connections to Redis, DynamoDB, and config services in staging to test fallback paths.
 - Applied ARIMA-based anomaly detection to AWS spend, then right-sized resources to cut infrastructure costs by 30% across seven services.
