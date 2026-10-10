@@ -1,5 +1,7 @@
 # Hi, I'm Ravi
 
+**Blog:** [ravivats.github.io](https://ravivats.github.io) has my write-ups, talk slides, and notes on what I'm working on.
+
 I'm a Lead Data Scientist at [Thoughtworks](https://www.thoughtworks.com) in Singapore. I build LLM agent systems and retrieval-augmented generation (RAG) applications for public sector clients, and the evaluation and monitoring that sits around them: checks for goal drift, hallucination, and drops in output quality once a system is running in production.
 
 Before Thoughtworks I spent six years at Grab, first on high-throughput Go services for food and express deliveries and later on LLM systems for multilingual content. Before that I worked on trade rules violation detection engine & trade data pipelines at Morgan Stanley as a Backend and Data Engineer.
